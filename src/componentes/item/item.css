@@ -1,13 +1,7 @@
-#card-productos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.producto{
-    margin: 20px;
-    padding: 15px;
-    border: solid skyblue 0.5px;
-    border-radius: 10px
+.card-producto{
+    border: 1px black solid;
+    border-radius: 10%;
+    margin: 1rem;
 }
 img{
     max-width: 100%;
@@ -26,6 +20,7 @@ img{
 }
 .card-text{
     font-size: 1rem;
+    text-align: center;
 }
 
 .card-price{
@@ -34,11 +29,13 @@ img{
     text-align: center;
 }
 
-.producto-agregar{
+button{
     max-width: 100%; 
     height: auto; 
     display: block; 
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     background-color: skyblue;
     color: black;
     border-radius: 20px;

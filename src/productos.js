@@ -1,7 +1,6 @@
-
-[
+const productos = [
     {
-        "producto":"Comida 1",
+        "nombre":"Comida 1",
         "precio":"2000",
         "id":"comida-chico-baby",
         "img":"../img/pequeños/pequeño-baby.png",
@@ -10,7 +9,7 @@
         "descripcion":"Comida para perros pequeños de hasta 4 meses de edad"
     },
     {
-        "producto":"Comida 2",
+        "nombre":"Comida 2",
         "precio":"2500",
         "id":"comida-chico-puppy",
         "img":"../img/pequeños/pequeño-puppy.png",
@@ -19,7 +18,7 @@
         "descripcion":"Comida para perros pequeños de 4 a 12 meses de edad"
     },
     {
-        "producto":"Comida 3",
+        "nombre":"Comida 3",
         "precio":"3000",
         "id":"comida-chico-adult",
         "img":"../img/pequeños/pequeño-adulto.png",
@@ -28,7 +27,7 @@
         "descripcion":"Comida para perros pequeños de 1 a 7 años"
     },
     {
-        "producto":"Comida 4",
+        "nombre":"Comida 4",
         "precio":"4000",
         "id":"comida-chico-senior",
         "img":"../img/pequeños/pequeño-senior.png",
@@ -37,7 +36,7 @@
         "descripcion":"Comida para perros pequeños con mas de 8 años"
     },
     {
-        "producto":"Comida 5",
+        "nombre":"Comida 5",
         "precio":"2500",
         "id":"comida-mediano-baby",
         "img":"../img/medianos/mediano-baby.png",
@@ -46,7 +45,7 @@
         "descripcion":"Comida para perros medianos de hasta 4 meses de edad"
     },
     {
-        "producto":"Comida 6",
+        "nombre":"Comida 6",
         "precio":"3500",
         "id":"comida-mediano-puppy",
         "img":"../img/medianos/mediano-puppy.png",
@@ -55,7 +54,7 @@
         "descripcion":"Comida para perros medianos de 4 a 12 meses de edad"
     },
     {
-        "producto":"Comida 7",
+        "nombre":"Comida 7",
         "precio":"5000",
         "id":"comida-mediano-adult",
         "img":"../img/medianos/mediano-adulto.png",
@@ -64,7 +63,7 @@
         "descripcion":"Comida para perros medianos de 1 a 7 años"
     },
     {
-        "producto":"Comida 8",
+        "nombre":"Comida 8",
         "precio":"6000",
         "id":"comida-mediano-senior",
         "img":"../img/medianos/mediano-senior.png",
@@ -73,7 +72,7 @@
         "descripcion":"Comida para perros medianos con mas de 8 años"
     },
     {
-        "producto":"Comida 9",
+        "nombre":"Comida 9",
         "precio":"5000",
         "id":"comida-grande-baby",
         "img":"../img/grandes/grande-baby.png",
@@ -82,7 +81,7 @@
         "descripcion":"Comida para perros grande de hasta 4 meses de edad"
     },
     {
-        "producto":"Comida 10",
+        "nombre":"Comida 10",
         "precio":"5500",
         "id":"comida-grande-puppy",
         "img":"../img/grandes/grande-puppy.png",
@@ -91,7 +90,7 @@
         "descripcion":"Comida para perros grande de 4 a 12 meses de edad"
     },
     {
-        "producto":"Comida 11",
+        "nombre":"Comida 11",
         "precio":"7000",
         "id":"comida-grande-adult",
         "img":"../img/grandes/grande-adulto.png",
@@ -100,7 +99,7 @@
         "descripcion":"Comida para perros grande de 1 a 7 años"
     },
     {
-        "producto":"Comida 12",
+        "nombre":"Comida 12",
         "precio":"8000",
         "id":"comida-grande-senior",
         "img":"../img/grandes/grande-senior.png",
@@ -109,3 +108,12 @@
         "descripcion":"Comida para perros grande con mas de 8 años"
     }
 ]
+
+export default function fetchData() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(productos);
+        }, 3000);
+    });
+};
+
